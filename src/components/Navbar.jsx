@@ -81,6 +81,11 @@ const Navbar = () => {
           </ul>
         </section>
       )}
+      <div className="flex md:hidden  justify-around mt-1">
+      <button className=" text-[#8e8e8e] px-2 hover:text-black hover:bg-[#e9e8e8] hover:rounded-xl"> Overview</button>
+      <button className=" text-[#8e8e8e]  px-2 hover:text-black hover:bg-[#e9e8e8] hover:rounded-xl"> Saving Calculator</button>
+      <button className=" text-[#8e8e8e]   px-2 hover:text-black hover:bg-[#e9e8e8] hover:rounded-xl"> Subscription plans</button>
+      </div> 
     </nav>
   );
 };
