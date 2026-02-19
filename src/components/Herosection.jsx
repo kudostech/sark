@@ -40,7 +40,8 @@ function Herosection()
 <img className=' md:hidden hidden mt-10 lg:block ' src={hero} alt="" />
 </div>
 <h1 className='text-center md:hidden text-2xl font-bold mt-20' > Een deelauto is vaak <br /> goedkoper dan een eigen <br /> auto. Bereken hier je <br /> maandelijkse kosten <br /> bij Cago.</h1>
-<h1 className=' hidden md:block text-center text-4xl font-medium mt-10' > Een deelauto is vaak  goedkoper <br /> dan een eigen auto. Bereken hier je <br /> maandelijkse kosten bij Cago.</h1>
+<h1 className=' hidden md:block lg:hidden text-center text-4xl font-medium mt-10' > Een deelauto is vaak  goedkoper <br /> dan een eigen auto. Bereken hier je <br /> maandelijkse kosten bij Cago.</h1>
+<h1 className=' hidden md:hidden lg:block text-center text-4xl font-medium mt-20' > Een deelauto is vaak  goedkoper dan een eigen <br /> auto. Bereken hier je maandelijkse kosten bij Cago.</h1>
 </div>
 
 
