@@ -136,7 +136,7 @@ function Calculator() {
             </div>
           </div>
         </section>
-        <div className=" bg-gray-50  mt-4 mx-10 rounded-md">
+        <div className=" bg-gray-50 pb-6  my-4 mx-10 rounded-md">
           <h1 className=" md:hidden font-bold p-4">
             {" "}
             We take care of everything, you don’t <br />
@@ -150,7 +150,7 @@ function Calculator() {
 
 
 
-          <section className=" md:hidden lg:hidden gap-3 flex flex-col">
+          <section className=" md:hidden lg:hidden gap-3 flex flex-col"> {/* for mobile screen*/}
             <div className=" gap-1 ml-4 mr-34 border border-[#e9e9e9] p-1 flex items-center bg-gray-100  pl-2  rounded-2xl">
               <FontAwesomeIcon
                 className=" text-green-600"
