@@ -125,26 +125,27 @@ Elke maand eerste <br /> 30 uur gratis
        <p className="  px-5 pb-6 font-light">
             {" "}
             <span className="font-bold ">Note: </span>Subscription can be
-            different for each location based on extra services in some
+            different for each location based on extra <br />services in some
             location. Go to your{" "}
             <span className="font-bold underline">location page </span>to see
             specific prices.{" "}
           </p>
-               <div className=" text-white flex bg-green-600 items-center justify-between rounded-md mx-8">
-              <h1 className=" text-3xl  text-white "> Intro</h1>
-              <p className="   font-medium">
+               <div className=" text-white flex bg-green-600 items-center justify-between rounded-xl m-2 px-6 py-4">
+            <div className=" flex gap-6 items-center justify-center">
+                <h1 className=" text-3xl  text-white "> Intro</h1>
+              <p className="  mt-2 font-medium">
                 {" "}
                 Start with free plan, no monthly payment
               </p>
+            </div>
               <h1 className="  font-light ">
                 €5 / uur 
                 €0,24 per KM
               </h1>
             </div>
-              <div className=" flex flex-col gap-4 md:flex-row md:mx-5 md:gap-6 ">
-<div className=" flex flex-col gap-4 ">
-            <div className=" text-white pb-10 md:flex-1 px-6 md:mx-0 mx-5 bg-[#5d6957] rounded-2xl">
-              <h1 className=" pt-7  text-green-100 "> MEDIUM</h1>
+              <div className=" flex gap-4 m-2 ">
+            <div className=" text-white pb-10 flex-1 px-6  bg-[#5d6957] rounded-2xl">
+              <h1 className=" pt-7  text-green-100 "> BASICS</h1>
               <h1 className="text-5xl font-medium mt-4">
                 €50<span className="text-3xl font-light">/ maand</span>
               </h1>
@@ -165,15 +166,12 @@ Elke maand eerste <br /> 30 uur gratis
               </div>
               <p className="text-xl mt-6">
                 {" "}
-                <span className=" text-gray-400 line-through">€5</span> 4,5 /
+                <span className=" text-gray-00 line-through">€5</span> 4,5 /
                 uur na vrije uren <br /> €0,24 / KM
               </p>
             </div>
-         </div>
-
-          
-            <section className=" gap-4 flex flex-col md:flex md:flex-row md:mx-5 md:gap-6">
-                <div className=" text-white pb-10 md:flex-1 md:mx-0  px-6 mx-5 bg-[#5d6957] rounded-2xl">
+         
+                <div className=" text-white pb-10 flex-1  px-6 bg-[#5d6957] rounded-2xl">
               <h1 className=" pt-7  text-green-100 "> PLUS</h1>
               <h1 className="text-5xl font-medium mt-4">
                 €100<span className="text-3xl font-light">/ maand</span>
@@ -225,7 +223,7 @@ Elke maand eerste <br /> 30 uur gratis
                 uur na vrije uren <br /> €0,24 / KM
               </p>
             </div>
-            </section>
+            
           </div>
           </div>
         </div>
