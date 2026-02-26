@@ -288,7 +288,7 @@ function Calculator() {
         </div>
       </div>
 
-      <div className=" hidden lg:block  "> {/* desktop */}
+      <div className=" hidden lg:block mx-20  "> {/* desktop */}
         <section className=" lg:flex lg:justify-between flex mx-10 rounded-2xl mt-10 border border-[#eeeeee]">
           <div className="  p-6 ">
             <h1 className="text-green-600 font-light">COST CALCULATOR</h1>

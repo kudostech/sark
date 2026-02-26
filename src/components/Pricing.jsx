@@ -6,9 +6,13 @@ function Pricing() {
   return (
     <div>
       <section>
-        <h1 className=" text-2xl px-10 font-bold">
+        <h1 className=" text-2xl px-10 font-bold lg:hidden ">
           {" "}
           Je kunt je abonnement elke maand wijzigen of <br /> beëindigen.
+        </h1>
+        <h1 className=" text-2xl px-10 font-bold mx-11 hidden lg:block lg:mt-40 ">
+          {" "}
+          Je kunt je abonnement elke <br />maand wijzigen of beëindigen.
         </h1>
         <div className=" bg-gray-100 lg:mx-20 h-full my-10 py-10 rounded-2xl mx-10 ">
           <p className=" lg:hidden px-5 pb-6 font-light">
@@ -121,7 +125,7 @@ Elke maand eerste <br /> 30 uur gratis
 
 
           <div className="hidden lg:block md:hidden mx-10"> {/* for large screen */}
-  
+   
        <p className="  px-5 pb-6 font-light">
             {" "}
             <span className="font-bold ">Note: </span>Subscription can be
