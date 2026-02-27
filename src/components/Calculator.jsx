@@ -295,13 +295,13 @@ function Calculator() {
 
             <div>
               <div>
-                <div className=" flex lg:justify-between mt-3 ">
+                <div className=" flex  gap-30 justify-between mt-3 ">
                   <p className=" text-[#8e8e8e] font-extralight">
                     {" "}
                     Hoeveel kilometers <br />
                     reis je per maand?
                   </p>
-                  <button className=" lg:ml-54 rounded-3xl py-1 px-10 bg-[#f4f4f4]">
+                  <button className=" lg:ml-4 rounded-3xl py-0 px-10 bg-[#f4f4f4]">
                     {kmValue}
                   </button>
                 </div>

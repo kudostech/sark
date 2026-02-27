@@ -12,11 +12,11 @@ function Download() {
         </section>
 
 
- <section className=' hidden  bg-green-950 p-8 md:flex  justify-between font-bold   mx-10 rounded-xl '>
+ <section className=' hidden  bg-green-950 p-8 md:flex  justify-between font-bold   mx-10 rounded-xl lg:mx-40'> {/* large screen */}
         <h1 className='text-white '>
             Download our app to <br /> book our cars and boats
         </h1>
-         <h1 className='text-white hidden lg:block '>
+         <h1 className='text-white hidden lg:block  '>
             Download our app to <br /> book our cars and boats
         </h1>
         <button className='  bg-white border rounded-xl px-2 py-3 font-normal'> Downlaod de app</button>
