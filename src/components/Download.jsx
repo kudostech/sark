@@ -8,7 +8,9 @@ function Download() {
         <h1 className='text-white text-center'>
             Download our app to <br /> book our cars and boats
         </h1>
-        <button className=' mx-auto bg-white border rounded-xl px-2 py-3 font-normal'> Downlaod de app</button>
+<a href="https://play.google.com/store/apps?hl=en_GB" className='mx-auto'
+target='_blank'><button
+         className=' cursor-pointer  bg-white border rounded-xl px-2 py-3 font-normal'> Downlaod de app</button></a>
         </section>
 
 
@@ -19,7 +21,8 @@ function Download() {
          <h1 className='text-white hidden lg:block  '>
             Download our app to <br /> book our cars and boats
         </h1>
-        <button className='  bg-white border rounded-xl px-2 py-3 font-normal'> Downlaod de app</button>
+<a href="https://play.google.com/store/apps?hl=en_GB 
+" target='_blank'><button className=' cursor-pointer  bg-white border rounded-xl px-2 py-3 font-normal'> Downlaod de app</button></a>
         </section>
         
     </div>

@@ -5,7 +5,7 @@ function Herosection()
 {
   return (
    <section>
-<div className=' flex flex-col gap-5   '>
+<div id='hero' className=' scroll-mt-16 flex flex-col gap-5 mt-14  '>
 <div className='lg:flex  lg:mx-20 lg:justify-between '>
        <div className='hidden md:hidden lg:block'>
          <h1 className='  md:hidden  text-5xl  mt-14 mx-4'>
@@ -25,7 +25,7 @@ function Herosection()
   <p className='font-light mx-4 md:hidden'> No deposit. There's a plan that works <br /> for everyone.</p>
 <p className=' hidden font-light lg:hidden mx-4 md:mx-8'> No deposit. There's a plan that works  for everyone.</p>
 <img className=' lg:hidden mx-auto ' src={hero} alt="" />
-<img className=' lg:hidden   mx-auto ' src={hero} alt="" />
+< img className=' lg:hidden   mx-auto ' src={hero} alt=""  />
        </div>
         <h1 className='  md:hidden  text-5xl  mt-14 mx-4'>
         Huur luxe <br /> deelauto voor <br /><span className=' text-green-600'>€2,5 per uur</span> 
@@ -39,7 +39,7 @@ function Herosection()
        <img className=' lg:hidden md:mt-20  mx-auto ' src={hero} alt="" />
 <img className=' md:hidden hidden mt-10 lg:block ' src={hero} alt="" />
 </div>
-<h1 className='text-center md:hidden text-2xl font-bold mt-20' > Een deelauto is vaak <br /> goedkoper dan een eigen <br /> auto. Bereken hier je <br /> maandelijkse kosten <br /> bij Cago.</h1>
+
 <h1 className=' hidden md:block lg:hidden text-center text-4xl font-medium mt-10' > Een deelauto is vaak  goedkoper <br /> dan een eigen auto. Bereken hier je <br /> maandelijkse kosten bij Cago.</h1>
 <h1 className=' hidden md:hidden lg:block text-center text-4xl font-medium mt-20' > Een deelauto is vaak  goedkoper dan een eigen <br /> auto. Bereken hier je maandelijkse kosten bij Cago.</h1>
 </div>

@@ -13,9 +13,11 @@ function Calculator() {
 
   return (
     <div>
-      <div className=" md:block lg:hidden"> {/* mobile and tablet */}
+      <div id="our-cars" className=" scroll-mt-28 md:scroll-mt-62 md:block lg:hidden"> {/* mobile and tablet */}
+        <h1 className='text-center md:hidden text-2xl font-bold mt-20' > Een deelauto is vaak <br /> goedkoper dan een eigen <br /> auto. Bereken hier je <br /> maandelijkse kosten <br /> bij Cago.</h1>
         <section className="  mx-10 md:bg-green-50 rounded-2xl mt-10 border border-[#eeeeee]">
-          <div className=" gap-8 p-4 bg-white ">
+          
+          <div id="calculator" className=" scroll-mt-32 gap-8 p-4 bg-white ">
             <h1 className="text-green-600 font-light">COST CALCULATOR</h1>
 
             <div>
@@ -136,13 +138,13 @@ function Calculator() {
             </div>
           </div>
         </section>
-        <div className=" bg-gray-50 pb-6  my-4 mx-10 rounded-md">
+        <div id="benefit" className=" md:scroll-mt-20 scroll-mt-30 bg-gray-50 pb-6  my-4 mx-10 rounded-md">
           <h1 className=" md:hidden font-bold p-4">
             {" "}
             We take care of everything, you don’t <br />
             have to worry about:
           </h1>
-          <h1 className=" hidden md:block font-bold p-4">
+          <h1 className="  hidden md:block font-bold p-4">
             {" "}
             We take care of everything, you don’t 
             have to worry about:

@@ -5,7 +5,7 @@ import { faCircleExclamation } from "@fortawesome/free-solid-svg-icons";
 function Pricing() {
   return (
     <div>
-      <section>
+      <section id="pricing" className="scroll-mt-30 md:scroll-mt-20" >
         <h1 className=" text-2xl px-10 font-bold lg:hidden ">
           {" "}
           Je kunt je abonnement elke maand wijzigen of <br /> beëindigen.
@@ -14,13 +14,24 @@ function Pricing() {
           {" "}
           Je kunt je abonnement elke <br />maand wijzigen of beëindigen.
         </h1>
-        <div className=" bg-gray-100 lg:mx-20 h-full my-10 py-10 rounded-2xl mx-10 ">
+        <div  className=" bg-gray-100 lg:mx-20 h-full my-10 py-10 rounded-2xl mx-10 ">
           <p className=" lg:hidden px-5 pb-6 font-light">
             {" "}
             <span className="font-bold ">Note: </span>Subscription can be
             different for each location based on extra services in some
             location. Go to your{" "}
-            <span className="font-bold underline">location page </span>to see
+            <span
+            
+             onClick={() =>
+            {
+              document.getElementById('our-cars').scrollIntoView(
+                {
+                  behavior: "smooth"
+                }
+              )
+            }
+            }
+            className="font-bold cursor-pointer underline">location page </span>to see
             specific prices.{" "}
           </p>
           <div className=" flex flex-col gap-4 lg:hidden "> {/*for mobile and Tablet */}
