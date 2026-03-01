@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav id="nav" className="scroll-mt-4">
-      <section className="fixed w-full  bg-white top-0 lg:pr-60 md:pr-10 left-0 pr-6 py-2  flex justify-between  items-center mx-4 md:mx-8 lg:mx-24">
+      <section className="fixed w-full  bg-white top-0 lg:pr-44 md:pr-10 left-0 pr-6 py-2 lg:px-18 flex justify-between  items-center mx-4 md:mx-8 ">
         <img
         onClick={()=> {
           document.getElementById('nav').scrollIntoView({
@@ -25,14 +25,14 @@ const Navbar = () => {
         <ul className=" hidden md:hidden mt-3 gap-8 lg:flex">
           <li
            onClick={()=> {
-          document.getElementById('our-cars').scrollIntoView({
+          document.getElementById('lg-cars').scrollIntoView({
             behavior: "smooth"
           })
          
         }} className=" cursor-pointer hover:font-bold"> Our Cars</li>
           <li 
            onClick={()=> {
-          document.getElementById('our-cars').scrollIntoView({
+          document.getElementById('lg-cars').scrollIntoView({
             behavior: "smooth"
           })
          
@@ -46,12 +46,18 @@ const Navbar = () => {
         }} className=" cursor-pointer hover:font-bold"> Pricing </li>
           <li 
           onClick={()=> {
-          document.getElementById('our-cars').scrollIntoView({
+          document.getElementById('lg-benefit').scrollIntoView({
             behavior: "smooth"
           })
         }}
           className=" cursor-pointer hover:font-bold"> Benefits</li>
-          <li className=" cursor-pointer hover:font-bold"> Support</li>
+          <li 
+           onClick={()=> {
+          document.getElementById('lg-support').scrollIntoView({
+            behavior: "smooth"
+          })
+        }}
+          className=" cursor-pointer hover:font-bold"> Support</li>
         </ul>
         <div>
           <div className="flex justify-center items-center gap-4 mt-2 md:mt-4 ">

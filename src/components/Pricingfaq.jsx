@@ -35,9 +35,6 @@ function Pricingfaq() {
   answer: " ijkheid, met een eigen risico van €500. Onze maandelijk"
  }
 ]
-
-
- 
   return (
     <div>
       <section>
@@ -72,7 +69,7 @@ function Pricingfaq() {
           
           <button 
         onClick={() => setReadFaqs(!readFaqs)}
-          className=" hover:bg-gray-300 cursor-pointer border-2 border-gray-700 flex items-center justify-center gap-2 p-4 mx-20 rounded-2xl  ">
+          className=" hover:bg-gray-100 cursor-pointer border-2 border-gray-700 flex items-center justify-center gap-2 p-4 mx-20 rounded-2xl  ">
             {readFaqs? "Read Less" : "Read More Faqs"}
             <FontAwesomeIcon icon={faArrowRight} />
           </button>

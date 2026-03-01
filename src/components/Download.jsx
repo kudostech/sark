@@ -14,8 +14,8 @@ target='_blank'><button
         </section>
 
 
- <section className=' hidden  bg-green-950 p-8 md:flex  justify-between font-bold   mx-10 rounded-xl lg:mx-40'> {/* large screen */}
-        <h1 className='text-white '>
+ <section className=' hidden  bg-green-950 p-8 md:flex justify-between font-bold   mx-10 rounded-xl lg:mx-40'> {/* large screen */}
+        <h1 className='text-white lg:hidden '>
             Download our app to <br /> book our cars and boats
         </h1>
          <h1 className='text-white hidden lg:block  '>

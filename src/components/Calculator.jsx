@@ -17,7 +17,7 @@ function Calculator() {
         <h1 className='text-center md:hidden text-2xl font-bold mt-20' > Een deelauto is vaak <br /> goedkoper dan een eigen <br /> auto. Bereken hier je <br /> maandelijkse kosten <br /> bij Cago.</h1>
         <section className="  mx-10 md:bg-green-50 rounded-2xl mt-10 border border-[#eeeeee]">
           
-          <div id="calculator" className=" scroll-mt-32 gap-8 p-4 bg-white ">
+          <div id="calculator" className=" rounded-2xl scroll-mt-32 gap-8 p-4 bg-white ">
             <h1 className="text-green-600 font-light">COST CALCULATOR</h1>
 
             <div>
@@ -92,7 +92,7 @@ function Calculator() {
           </div>
           <hr className=" w-full md:mt-0 mt-3 text-[#e9e9e9] " />
 
-          <div className="p-4 md:px-6 md:pb-0 md:flex md:gap-20 md:bg-green-50   ">
+          <div className="p-4 md:px-6 md:pb-0 md:flex md:gap-20 md:bg-[#fafff8]   ">
             <div className=" ">
               <h6 className="text-green-500 font-medium ">CAGO COSTS:</h6>
               <h1 className="text-4xl font-bold mt-4 text-[#494949] "> €220</h1>
@@ -290,23 +290,27 @@ function Calculator() {
         </div>
       </div>
 
-      <div className=" hidden lg:block mx-20  "> {/* desktop */}
-        <section className=" lg:flex lg:justify-between flex mx-10 rounded-2xl mt-10 border border-[#eeeeee]">
-          <div className="  p-6 ">
-            <h1 className="text-green-600 font-light">COST CALCULATOR</h1>
+      <div id="lg-cars" className=" scroll-mt-44 hidden lg:block mx-20  "> {/* desktop */}
+        
+         <section className=" border  rounded-2xl border-gray-200  flex mt-5 mx-20">
 
-            <div>
-              <div>
-                <div className=" flex  gap-30 justify-between mt-3 ">
+
+
+          <div className="   flex-1 gap-6 py-6  flex flex-col px-10">
+           <h6 className="text-green-600  font-light text-xs">COST CALCULATOR</h6>
+
+            
+                <div className=" flex justify-between ">
                   <p className=" text-[#8e8e8e] font-extralight">
                     {" "}
                     Hoeveel kilometers <br />
                     reis je per maand?
                   </p>
-                  <button className=" lg:ml-4 rounded-3xl py-0 px-10 bg-[#f4f4f4]">
+                  <button className=" px-10 rounded-3xl   bg-[#f4f4f4]">
                     {kmValue}
                   </button>
                 </div>
+                
                 <input
                   value={kmValue}
                   max="1500"
@@ -317,7 +321,8 @@ function Calculator() {
           appearance-none
           bg-gray-200 h-0.5
           cursor-pointer
-           w-full mt-6 accent-black 
+           w-full  accent-black 
+           
            "
                   style={{
                     background: `linear-gradient(to right, black ${
@@ -326,24 +331,21 @@ function Calculator() {
                   }}
                   type="range"
                 />
-              </div>
-            </div>
+             
 
-            <div>
-              <div>
-                <div className=" flex justify-between mt-3">
+                <div className=" flex justify-between ">
                   <p className=" text-[#8e8e8e] font-extralight">
                     {" "}
-                    Hoeveel uur gebruik je <br /> de auto per maand?
+                      Hoeveel uur gebruik je <br /> de auto per maand?
                   </p>
-                  <button className=" rounded-3xl py-1 px-12 bg-[#f4f4f4]">
+                  <button className=" px-10 rounded-3xl   bg-[#f4f4f4]">
                     {hrValue}
                   </button>
                 </div>
-
+                
                 <input
                   value={hrValue}
-                  max="300"
+                  max="900"
                   min="0"
                   onChange={(e) => setHrValue(e.target.value)}
                   className="
@@ -351,70 +353,72 @@ function Calculator() {
           appearance-none
           bg-gray-200 h-0.5
           cursor-pointer
-           w-full mt-6 accent-black 
-           "
-                  style={{
+           w-full  accent-black " style={{
                     background: `linear-gradient(to right, black ${
-                      (hrValue / 300) * 100
-                    }%, #e5e7eb ${(hrValue / 300) * 100}%)`,
+                      (hrValue / 900) * 100
+                    }%, #e5e7eb ${(hrValue / 900) * 100}%)`,
                   }}
                   type="range"
                 />
-              </div>
-            </div>
           </div>
-          
-            <div className="bg-gray-100 w-px ml-22 "></div>
-          <div className=" items-center bg-green-50 w-50/100  ">
-            <div className="flex p-4 mt-4 justify-center  ">
-            <div className="">
+
+<div className=" w-0 border-gray-200 border "></div>
+
+ <div className=" rounded-2xl flex flex-col gap-4 py-6 flex-1 bg-[#fdfffb] ">
+
+  <div className=" flex ">
+            <div className=" flex flex-col px-6 gap-4 ">
               <h6 className="text-green-500 font-medium ">CAGO COSTS:</h6>
-              <h1 className="text-4xl font-bold mt-4 text-[#494949] "> €220</h1>
-              <p className="text-xs mt-2">
+              <h1 className="text-4xl font-bold  text-[#494949] "> €220</h1>
+              <p className="text-xs">
                 {" "}
-                It is recommended to use Cago <br /> PLUS subscription to save
-                more.{" "}
+                It is recommended to use Cago <br /><span className="text-nowrap"> PLUS subscription to save
+                more.{" "}</span>
               </p>
             </div>
-               <div className="bg-gray-300 w-px mx-6"></div>
-            <div className=" flex-1  ">
+            
+           <div className=" bg-gray-300 w-px "></div>
+            <div className=" flex flex-col px-6  gap-4 ">
               <h6 className=" text-sm ">PERSONAL CAR COSTS:</h6>
-              <div className=" flex items-center mt-4 gap-1">
+              <div className=" flex items-center gap-0.5">
                 <h1 className="text-4xl font-bold  text-[#494949] "> €400</h1>
                 <FontAwesomeIcon
                   className="mt-2 text-xl"
                   icon={faCircleExclamation}
                 />
               </div>
-              <p className="text-xs mt-2">
+              <p className="text-xs ">
                 {" "}
-                Berekend op basis van bezit en <br /> gebruik van een VW Polo
-                uit uit 2020
+                Berekend op basis van bezit en <br /> <span className=" text-nowrap">gebruik van een VW Polo
+                uit uit 2020</span>
               </p>
             </div>
           </div>
-          <div className=" bg-green-100 w-90/100 mt-4 gap-20 flex items-center mb-6 mx-4 rounded-md py-1 px-4">
+          <div className=" bg-green-50 rounded-xl py-3 px-3 justify-between flex mx-6">
             <p className=" text-sm ">
               Driving Cago{" "}
               <span
                 className=" underline decoration-gray-500
 "
-              >
+              > 
                 luxurious car,
-              </span>{" "} <br />
-              you will{" "}
+              </span>{" "}
+              <br /> you will{" "}
               <span className=" text-green-600"> save per month:</span>
             </p>
-            <div className="  flex gap-2   items-center ">
+            <div className=" mx-8 flex gap-2  items-center ">
               <h1 className=" text-4xl font-bold text-green-600"> €180</h1>{" "}
               <img className=" h-10" src={pricetag} alt="pricetag" />
             </div>
           </div>
-          </div>
-          
-        </section>
-        
-        <div className=" bg-gray-50 pb-4 mb my-4 mx-10 rounded-md">
+
+</div>
+
+
+
+
+         </section> 
+        <div id="lg-benefit" className=" scroll-mt-20 bg-gray-50 pb-4 mb my-4 mx-10 rounded-md">
           <h1 className=" font-bold p-4">
             {" "}
             We take care of everything, you don’t <br />
